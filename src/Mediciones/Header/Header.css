@@ -1,0 +1,26 @@
+/* Header.css */
+
+.header {
+    background-color: #97D5FF;
+    opacity: .96;
+    width: 1920px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textlogo {
+    font-size: 55px;
+    color: #686868;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.textlogo-bio {
+    font-weight: normal;
+}
+
+.textlogo-wave {
+    font-weight: bold;
+}

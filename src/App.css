@@ -1,0 +1,125 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.graficas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 2;
+  /* Ocupa el 50% del espacio */
+  margin-right: 20px;
+  /* Espacio entre gráficas y electrodos */
+}
+
+.electrodos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.estado-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.progreso-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 60px;
+}
+
+.progreso-texto {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+
+.estado-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.imagen-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+
+.imagen-estomago {
+  width: 250px;
+  align-items: end;
+}
+
+.extra-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.controles-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.mediciones-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.medicion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.texto-medicion {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.icon-button.check-in {
+  background-color: #02542D;
+  color: #ffffff;
+  size: 40px;
+}
+
+.icon-button.settings {
+  background-color: #1D2D7D;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
