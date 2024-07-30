@@ -6,7 +6,7 @@ function Header() {
     return (
     <header className="header">
         <div className="textlogo">
-        <span className="textlogo-bio">Bio</span><span className="textlogo-wave">Wave</span>
+        <span className="textlogo-bio">HOla SOy un error </span><span className="textlogo-wave">Wave</span>
         </div>
     </header>
     );
