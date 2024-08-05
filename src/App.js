@@ -8,9 +8,8 @@ import estomagoImage from './assets/img/estomago.png';
 import ExtraButtons from './Buttons/Extrabuttons';
 import OptionsBox from './Estado/Estado';
 import Barraprogreso from './Barraprogreso/Barraprogreso';
+import Cuestionario from './Cuestionario/Cuestionario'; // Importa el componente Cuestionario
 import './App.css'; // Asegúrate de importar tus estilos CSS si es necesario
-import Cuestionario from './Cuestionario/Cuestionario';
-
 
 const App = () => {
   const [simulaciones, setSimulaciones] = useState([
@@ -27,12 +26,29 @@ const App = () => {
     { id: 2, datos: [] },
   ]);
 
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+
+  const [mostrarCuestionario, setMostrarCuestionario] = useState(false);
+
+  const increaseBy10 = (setCount, count) => {
+    setCount(count + 10);
+  };
+
+  const decreaseBy10 = (setCount, count) => {
+    setCount(count - 10);
+  };
+
+  const manejarClick = () => {
+    setMostrarCuestionario(!mostrarCuestionario);
+  };
+
   return (
     <div className="App">
       <Header />
 
       <div className="content-container">
-        {/* Contenedor de las gráficas y electrodos */}
         <div className="graficas-container">
           {simulaciones.map(simulacion => (
             <Ondas key={simulacion.id} datos={simulacion.datos} />
@@ -45,7 +61,6 @@ const App = () => {
           ))}
         </div>
 
-        {/* Contenedor horizontal de imagen, estado, botones extra, controles y mediciones */}
         <div className="imagen-estado-botones-container">
           <div className="estado-section">
             <div className="progreso-container">
@@ -61,7 +76,6 @@ const App = () => {
               </div>
             </div>
           </div>
-
 
           <div className="controles-container">
             <Controles
@@ -84,9 +98,35 @@ const App = () => {
           </div>
         </div>
       </div>
-      
+
+      <div className="contadores-container">
+        <div className="contador-section">
+          <h2>Aumento 1: {count1}</h2>
+          <button onClick={() => increaseBy10(setCount1, count1)}>Aumentar en 10</button>
+          <button onClick={() => decreaseBy10(setCount1, count1)}>Disminuir en 10</button>
+        </div>
+
+        <div className="contador-section">
+          <h2>Aumento 2: {count2}</h2>
+          <button onClick={() => increaseBy10(setCount2, count2)}>Aumentar en 10</button>
+          <button onClick={() => decreaseBy10(setCount2, count2)}>Disminuir en 10</button>
+        </div>
+
+        <div className="contador-section">
+          <h2>Aumento 3: {count3}</h2>
+          <button onClick={() => increaseBy10(setCount3, count3)}>Aumentar en 10</button>
+          <button onClick={() => decreaseBy10(setCount3, count3)}>Disminuir en 10</button>
+        </div>
+      </div>
+
+      {/* Botón para mostrar/ocultar el componente Cuestionario */}
+      <div className="cuestionario-button-container">
+        <button onClick={manejarClick}>
+          {mostrarCuestionario ? 'Cerrar Cuestionario' : 'Cuestionario'}
+        </button>
+        {mostrarCuestionario && <Cuestionario />}
+      </div>
     </div>
-    
   );
 };
 

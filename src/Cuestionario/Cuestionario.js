@@ -208,7 +208,9 @@ function Cuestionario() {
   </div>
 </div>
 
-        <div className="form-group">
+<div className="form-section">
+  <div className="form-row">
+    <div className="form-group">
           <label>16. ¿Padece diarreas frecuentes?</label>
           <div className="radio-group">
             <label>SÍ</label>
@@ -226,6 +228,11 @@ function Cuestionario() {
             <input type="radio" name="estrenimiento" value="NO" checked={formData.estrenimiento === 'NO'} onChange={handleChange} />
           </div>
         </div>
+        </div>
+        </div>
+
+        <div className="form-section">
+        <div className="form-row">
         <div className="form-group">
           <label>18. ¿Padece distensión abdominal?</label>
           <div className="radio-group">
@@ -244,7 +251,12 @@ function Cuestionario() {
             <input type="radio" name="flatulencias" value="NO" checked={formData.flatulencias === 'NO'} onChange={handleChange} />
           </div>
         </div>
-        <div className="form-group">
+        </div>
+        </div>
+
+        <div className="form-section">
+  <div className="form-row">
+    <div className="form-group">
           <label>20. ¿Padece eructos frecuentes?</label>
           <div className="radio-group">
             <label>SÍ</label>
@@ -262,7 +274,13 @@ function Cuestionario() {
             <input type="radio" name="nochesDolor" value="NO" checked={formData.nochesDolor === 'NO'} onChange={handleChange} />
           </div>
         </div>
-        <div className="form-group">
+        </div>
+        </div>
+
+        
+        <div className="form-section">
+  <div className="form-row">
+    <div className="form-group">
           <label>22. ¿Ha tenido alguna cirugía en el aparato digestivo?</label>
           <div className="radio-group">
             <label>SÍ</label>
@@ -280,6 +298,9 @@ function Cuestionario() {
             <input type="radio" name="sangreVomito" value="NO" checked={formData.sangreVomito === 'NO'} onChange={handleChange} />
           </div>
         </div>
+        </div>
+        </div>
+
         <div className="form-group">
           <label>24. ¿Toma algun medicamiento?</label>
           <div className="radio-group">
@@ -289,7 +310,9 @@ function Cuestionario() {
             <input type="radio" name="medicamento" value="NO" checked={formData.medicamento === 'NO'} onChange={handleChange} />
           </div>
         </div>
-        <div className="form-group">
+        <div className="form-section">
+  <div className="form-row">
+    <div className="form-group">
           <label>25. ¿Cuál medicamento?</label>
           <input type="text" name="cualMedicamento" value={formData.cualMedicamento} onChange={handleChange} />
         </div>
@@ -297,6 +320,9 @@ function Cuestionario() {
           <label>26. ¿Desde cuándo?</label>
           <input type="text" name="desdeCuando" value={formData.desdeCuando} onChange={handleChange} />
         </div>
+        </div>
+        </div>
+
       </form>
     </div>
   );

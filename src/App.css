@@ -123,3 +123,70 @@
   justify-content: center;
   align-items: center;
 }
+/* Contenedor para organizar los contadores en fila */
+.contadores-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px; /* Espacio aumentado entre los contadores */
+  margin-top: 20px;
+}
+
+/* Estilos para cada contador */
+.contador-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo gris claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.contador-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contador-section button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contador-section button:hover {
+  background-color: #0056b3;
+}
+
+.cuestionario-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.cuestionario-button-container button {
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cuestionario-button-container button:hover {
+  background-color: #45a049; /* Verde oscuro */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
