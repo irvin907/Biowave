@@ -1,0 +1,144 @@
+/* Estilos generales para todos los botones */
+.icon-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px;
+    /* Espaciado vertical entre botones */
+}
+
+.icon-button.disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.icon-button:hover {
+    background-color: #f0f0f0;
+
+}
+
+.icon-button.active {
+    background-color: #d9d9d9;
+}
+
+.icon-button.play {
+    background-color: #14ae5c;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.play.disabled {
+    background-color: #74B592;
+    color: #d4d4d4;
+}
+
+.icon-button.stop {
+    background-color: #EC221F;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.stop.disabled {
+    background-color: #E8817F;
+    color: #d4d4d4;
+}
+
+.icon-button.pause {
+    background-color: #E5A000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.pause.disabled {
+    background-color: #E5CC8F;
+    color: #d4d4d4;
+}
+
+.icon-button.resume {
+    background-color: #006FB5;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.resume.disabled {
+    background-color: #9BB1BF;
+    color: #d4d4d4;
+}
+
+.icon-button.save {
+    background-color: #AA1FC6;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.save.disabled {
+    background-color: #C18BCC;
+    color: #d4d4d4;
+}
+
+.icon-button.check-in {
+    background-color: #02542D;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.check-in .icon {
+    font-size: 35px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.icon-button.settings {
+    background-color: #1D2D7D;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button.settings .icon {
+    font-size: 35px;
+    /* Ajusta el tamaño del ícono específico para settings */
+    margin-right: 0;
+    /* Ajusta el margen derecho si es necesario */
+    margin-bottom: 0;
+    /* Ajusta el margen inferior si es necesario */
+}
+
+.icon {
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.text {
+    font-size: 16px;
+}

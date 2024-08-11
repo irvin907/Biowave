@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import Ondas from './Ondas/Ondas';
-import Controles from './Ondas/Controles';
-import Header from './Header/Header';
-import Electrodo from './Electrodos/Electrodo';
+import Ondas from './Componentes/Ondas/Ondas';
+import Controles from './Componentes/Ondas/Controles';
+import Header from './Componentes/Header/Header';
+import Electrodo from './Componentes/Electrodos/Electrodo';
 import electrodoImage from './assets/img/electrodo.png';
 import estomagoImage from './assets/img/estomago.png';
-import ExtraButtons from './Buttons/Extrabuttons';
-import OptionsBox from './Estado/Estado';
-import Barraprogreso from './Barraprogreso/Barraprogreso';
-import Cuestionario from './Cuestionario/Cuestionario'; // Importa el componente Cuestionario
+import ExtraButtons from './Componentes/Buttons/Extrabuttons';
+import OptionsBox from './Componentes/Estado/Estado';
+import Barraprogreso from './Componentes/Barraprogreso/Barraprogreso';
+import Cuestionario from './Componentes/Cuestionario/Cuestionario'; // Importa el componente Cuestionario
 import './App.css'; // Asegúrate de importar tus estilos CSS si es necesario
 
 const App = () => {
